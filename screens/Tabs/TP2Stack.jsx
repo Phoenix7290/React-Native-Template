@@ -22,7 +22,7 @@ const Stack = createStackNavigator();
 export default function TP2Stack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Exercícios" component={TP2} />
+      <Stack.Screen name="Exercícios:" component={TP2} />
       <Stack.Screen name="Exercício - 1" component={TP2_01} />
       <Stack.Screen name="Exercício - 2" component={TP2_02} />
       <Stack.Screen name="Exercício - 3" component={TP2_03} />
