@@ -1,8 +1,8 @@
 import { NavigationContainer} from "@react-navigation/native"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
-import Home from "./screens/Home";
-import TP1Stack from "./screens/Tabs/TP1Stack";
-import TP1 from "./screens/TP1";
+import Home from "./screens/Home/index.jsx";
+import TP1Stack from "./screens/Tabs/TP1Stack.jsx";
+import TP2Stack from "./screens/Tabs/TP2Stack.jsx";
 
 const tab = createBottomTabNavigator()
 
@@ -10,7 +10,8 @@ function TabGroup() {
   return (
     <tab.Navigator>
       <tab.Screen name="Home" component={Home} />
-      <tab.Screen name="Exercícios" component={TP1Stack} />
+      <tab.Screen name="TP1" component={TP1Stack} />
+      <tab.Screen name="TP2" component={TP2Stack} />
     </tab.Navigator>
   );
 }
